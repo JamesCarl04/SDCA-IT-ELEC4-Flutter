@@ -8,13 +8,19 @@ import 'package:flutter/material.dart';
     @override 
     Widget build(BuildContext context) {
         Scaffold homepage = Scaffold( 
-          appBar: AppBar(title: Text('Homepage'))
+          appBar: AppBar(title: Text('Homepage')),
+          floatingActionButton: FloatingActionButton(
+            onPressed: (){
+            //TODO: Implement button.
+          },
+          child: const Icon(Icons.add)
+          ),
         );
        return  MaterialApp(
         home: homepage,
         theme: ThemeData(
           appBarTheme: AppBarTheme(
-            backgroundColor: Colors.red,
+            backgroundColor: const Color.fromARGB(255, 255, 146, 146),
             foregroundColor: Colors.white
           )
         )
